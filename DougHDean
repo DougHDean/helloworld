@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>VidScripts</title>
+</head>
+<body>
+
+<?php
+$conn = mysqli_connect("localhost", "amadmans_SEuser", "SEAcces$") OR DIE ("CONNECT ERROR");
+mysqli_select_db($conn, "amadmans_transcripts") OR DIE ("SELECT DB ERROR NAV1");
+$result = mysqli_query($conn, "SELECT * FROM videos") OR DIE ("QUERY ERROR");
+
+?>
+
+
+</div>
+
+</body>
+</html>
